@@ -12,7 +12,8 @@
     "preset",
     "opinionated",
     "biome",
-    "biomejs"
+    "biomejs",
+    "tsconfig"
   ],
   "repository": {
     "type": "git",
@@ -43,7 +44,7 @@
     "./tsconfig/bundler/no-dom/library": "./tsconfig/bundler/no-dom.json",
     "./tsconfig/bundler/no-dom/library-monorepo": "./tsconfig/bundler/no-dom.json"
   },
-  "files": ["./biome", "scripts/cli.mjs"],
+  "files": ["./biome", "./tsconfig"],
   "scripts": {
     "format": "pnpm biome format",
     "format:write": "pnpm biome format --write",
