@@ -46,10 +46,14 @@
   "files": ["./biome", "scripts/cli.mjs"],
   "scripts": {
     "format": "pnpm biome format",
-    "format:write": "pnpm biome format --write"
+    "format:write": "pnpm biome format --write",
+    "release": "pnpm biome format && changeset publish",
+    "version-packages": "changeset version",
+    "changeset": "changeset"
   },
   "devDependencies": {
     "@biomejs/biome": "^1.9.4",
+    "@changesets/cli": "^2.27.12",
     "@commitlint/cli": "^19.7.1",
     "@commitlint/config-conventional": "^19.7.1",
     "lefthook": "^1.10.10"

@@ -6,7 +6,7 @@ It is incredibly type-safe, and inspired by `@vercel-style-guide`, enforcing con
 
 <div>
   <img src="https://img.shields.io/github/actions/workflow/status/Envoy-VC/klarity/push.yaml" alt="" />
-  <img src="https://img.shields.io/npm/dy/klarity" alt="" />
+  <!-- <img src="https://img.shields.io/npm/dy/klarity" alt="" /> -->
   <img src="https://img.shields.io/npm/v/klarity" alt="" />
   <img src="https://img.shields.io/github/license/Envoy-VC/klarity" alt="" />
   <a href="https://biomejs.dev"><img alt="Static Badge" src="https://img.shields.io/badge/Formatted_with-Biome-60a5fa?style=flat&logo=biome"></a>
