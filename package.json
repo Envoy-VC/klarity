@@ -48,7 +48,7 @@
   "scripts": {
     "format": "pnpm biome format",
     "format:write": "pnpm biome format --write",
-    "release": "pnpm biome format:write && changeset publish",
+    "release": "pnpm biome format --write && changeset publish",
     "version-packages": "changeset version",
     "changeset": "changeset"
   },
