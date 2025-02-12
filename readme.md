@@ -5,7 +5,7 @@ Klarity is a collection of [Biome](https://biomejs.dev) presets that provide a s
 It is incredibly type-safe, and inspired by `@vercel-style-guide`, enforcing consistent code quality across your codebase.
 
 <div>
-  <img src="https://img.shields.io/github/actions/workflow/status/Envoy-VC/klarity/push.yaml" alt="" />
+  <img src="https://img.shields.io/github/actions/workflow/status/Envoy-VC/klarity/release.yml" alt="" />
   <!-- <img src="https://img.shields.io/npm/dy/klarity" alt="" /> -->
   <img src="https://img.shields.io/npm/v/klarity" alt="" />
   <img src="https://img.shields.io/github/license/Envoy-VC/klarity" alt="" />
