@@ -1,14 +1,55 @@
 {
 	"name": "klarity",
 	"version": "0.0.0",
-	"main": "index.js",
-	"scripts": {
-		"test": "echo \"Error: no test specified\" && exit 1"
+	"author": "Vedant Chainani <vedantchainani1084@gmail.com>",
+	"license": "MIT",
+	"description": "Klarity is a robust opinionated preset that provides a set of rules for Linting and Formatting",
+	"homepage": "https://github.com/Envoy-vc/klarity#readme",
+	"keywords": [
+		"klarity",
+		"linter",
+		"formatter",
+		"preset",
+		"opinionated",
+		"biome",
+		"biomejs"
+	],
+	"repository": {
+		"type": "git",
+		"url": "git+https://github.com/Envoy-vc/klarity#readme"
 	},
-	"keywords": [],
-	"author": "",
-	"license": "ISC",
-	"description": "",
+	"bugs": {
+		"url": "https://github.com/Envoy-vc/klarity/issues"
+	},
+	"exports": {
+		"./biome": "./tsconfig/biome/base.jsonc",
+		"./biome/base": "./tsconfig/biome/base.jsonc",
+		"./tsconfig/tsc": "./tsconfig/tsc/dom/app.json",
+		"./tsconfig/tsc/dom": "./tsconfig/tsc/dom/app.json",
+		"./tsconfig/tsc/dom/app": "./tsconfig/tsc/dom/app.json",
+		"./tsconfig/tsc/dom/library": "./tsconfig/tsc/dom/library.json",
+		"./tsconfig/tsc/dom/library-monorepo": "./tsconfig/tsc/dom/library-monorepo.json",
+		"./tsconfig/tsc/no-dom": "./tsconfig/tsc/no-dom/app.json",
+		"./tsconfig/tsc/no-dom/app": "./tsconfig/tsc/no-dom/app.json",
+		"./tsconfig/tsc/no-dom/library": "./tsconfig/tsc/no-dom/library.json",
+		"./tsconfig/tsc/no-dom/library-monorepo": "./tsconfig/tsc/no-dom/library-monorepo.json",
+		"./tsconfig/bundler": "./tsconfig/bundler/dom.json",
+		"./tsconfig/bundler/dom": "./tsconfig/bundler/dom.json",
+		"./tsconfig/bundler/dom/app": "./tsconfig/bundler/dom.json",
+		"./tsconfig/bundler/dom/library": "./tsconfig/bundler/dom.json",
+		"./tsconfig/bundler/dom/library-monorepo": "./tsconfig/bundler/dom.json",
+		"./tsconfig/bundler/no-dom": "./tsconfig/bundler/no-dom.json",
+		"./tsconfig/bundler/no-dom/app": "./tsconfig/bundler/no-dom.json",
+		"./tsconfig/bundler/no-dom/library": "./tsconfig/bundler/no-dom.json",
+		"./tsconfig/bundler/no-dom/library-monorepo": "./tsconfig/bundler/no-dom.json"
+	},
+	"files": [
+		"./biome",
+		"scripts/cli.mjs"
+	],
+	"scripts": {
+		"format": "pnpm biome format"
+	},
 	"devDependencies": {
 		"@biomejs/biome": "^1.9.4"
 	}
