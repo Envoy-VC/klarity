@@ -1,6 +1,6 @@
 {
   "name": "klarity",
-  "version": "0.0.0",
+  "version": "0.0.1",
   "author": "Vedant Chainani <vedantchainani1084@gmail.com>",
   "license": "MIT",
   "description": "Klarity is a robust opinionated preset that provides a set of rules for Linting and Formatting",
@@ -44,7 +44,10 @@
     "./tsconfig/bundler/no-dom/library": "./tsconfig/bundler/no-dom.json",
     "./tsconfig/bundler/no-dom/library-monorepo": "./tsconfig/bundler/no-dom.json"
   },
-  "files": ["./biome", "./tsconfig"],
+  "files": [
+    "./biome",
+    "./tsconfig"
+  ],
   "scripts": {
     "format": "pnpm biome format",
     "format:write": "pnpm biome format --write",
