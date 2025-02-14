@@ -23,8 +23,8 @@
     "url": "https://github.com/Envoy-vc/klarity/issues"
   },
   "exports": {
-    "./biome": "./tsconfig/biome/base.json",
-    "./biome/base": "./tsconfig/biome/base.json",
+    "./biome": "./biome/base.json",
+    "./biome/base": "./biome/base.json",
     "./tsconfig/tsc": "./tsconfig/tsc/dom/app.json",
     "./tsconfig/tsc/dom": "./tsconfig/tsc/dom/app.json",
     "./tsconfig/tsc/dom/app": "./tsconfig/tsc/dom/app.json",
@@ -44,10 +44,7 @@
     "./tsconfig/bundler/no-dom/library": "./tsconfig/bundler/no-dom.json",
     "./tsconfig/bundler/no-dom/library-monorepo": "./tsconfig/bundler/no-dom.json"
   },
-  "files": [
-    "./biome",
-    "./tsconfig"
-  ],
+  "files": ["./biome", "./tsconfig"],
   "scripts": {
     "format": "pnpm biome format",
     "format:write": "pnpm biome format --write",
