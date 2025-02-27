@@ -1,6 +1,6 @@
 {
   "name": "klarity",
-  "version": "0.0.2",
+  "version": "0.0.3",
   "author": "Vedant Chainani <vedantchainani1084@gmail.com>",
   "license": "MIT",
   "description": "Klarity is a robust opinionated preset that provides a set of rules for Linting and Formatting",
