@@ -1,5 +1,11 @@
 # klarity
 
+## 0.0.3
+
+### Patch Changes
+
+- 9704f84: update nursery rules
+
 ## 0.0.2
 
 ### Patch Changes
