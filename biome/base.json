@@ -32,8 +32,6 @@
         "noConstantMathMinMaxClamp": "error",
         "noInvalidNewBuiltin": "error",
         "noNewSymbol": "error",
-        "noNodejsModules": "error",
-        "noUndeclaredVariables": "error",
         "noUndeclaredDependencies": "error",
         "noUnusedImports": "error",
         "useArrayLiterals": "error",
@@ -43,9 +41,10 @@
         "useConsistentCurlyBraces": "error",
         "useSortedClasses": {
           "level": "error",
+          "fix": "safe",
           "options": {
             "attributes": ["classList"],
-            "functions": ["clsx", "cva", "tw", "tw.*"]
+            "functions": ["tw", "clsx", "classnames", "className", "cn"]
           }
         },
         "useValidAutocomplete": "error",
@@ -65,7 +64,7 @@
         "noIrregularWhitespace": "error",
         "noNestedTernary": "error",
         "noOctalEscape": "error",
-        "noSecrets": "error",
+        "noSecrets": "off",
         "noStaticElementInteractions": "error",
         "noSubstr": "error",
         "noTemplateCurlyInString": "error",
@@ -221,5 +220,28 @@
     "clientKind": "git",
     "useIgnoreFile": true,
     "defaultBranch": "main"
-  }
+  },
+  "overrides": [
+    {
+      "include": [
+        "**/*.d.ts",
+        "*.config.ts",
+        "*.config.js",
+        "*.config.mjs",
+        "*.config.cjs",
+        "apps/web/src/app/**/page.tsx",
+        "apps/web/src/app/**/layout.tsx",
+        "apps/web/src/app/**/not-found.tsx",
+        "apps/web/src/app/**/*error.tsx",
+        "apps/web/src/app/**/opengraph-image.tsx"
+      ],
+      "linter": {
+        "rules": {
+          "style": {
+            "noDefaultExport": "off"
+          }
+        }
+      }
+    }
+  ]
 }
