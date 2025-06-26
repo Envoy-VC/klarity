@@ -1,5 +1,12 @@
 # klarity
 
+## 0.0.4
+
+### Patch Changes
+
+- 5abd65a: migrate to biome v2.0.5
+- 9704f84: update nursery rules
+
 ## 0.0.3
 
 ### Patch Changes
