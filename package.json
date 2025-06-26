@@ -36,10 +36,7 @@
     "./tsconfig/tsc/no-dom/library": "./tsconfig/tsc/no-dom/library.json",
     "./tsconfig/tsc/no-dom/library-monorepo": "./tsconfig/tsc/no-dom/library-monorepo.json"
   },
-  "files": [
-    "./biome",
-    "./tsconfig"
-  ],
+  "files": ["./biome", "./tsconfig"],
   "homepage": "https://github.com/Envoy-vc/klarity#readme",
   "keywords": [
     "klarity",

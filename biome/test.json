@@ -5,23 +5,5 @@
     "domains": {
       "test": "all"
     }
-  },
-  "overrides": [
-    {
-      "include": [
-        "**/*.d.ts",
-        "*.config.ts",
-        "*.config.js",
-        "*.config.mjs",
-        "*.config.cjs"
-      ],
-      "linter": {
-        "rules": {
-          "style": {
-            "noDefaultExport": "off"
-          }
-        }
-      }
-    }
-  ]
+  }
 }

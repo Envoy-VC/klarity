@@ -5,24 +5,5 @@
     "domains": {
       "react": "all"
     }
-  },
-  "overrides": [
-    {
-      "include": [
-        "**/*.d.ts",
-        "*.config.ts",
-        "*.config.js",
-        "*.config.mjs",
-        "*.config.cjs",
-        "apps/web/src/app/**/*.tsx"
-      ],
-      "linter": {
-        "rules": {
-          "style": {
-            "noDefaultExport": "off"
-          }
-        }
-      }
-    }
-  ]
+  }
 }

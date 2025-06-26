@@ -5,28 +5,5 @@
     "domains": {
       "next": "all"
     }
-  },
-  "overrides": [
-    {
-      "include": [
-        "**/*.d.ts",
-        "*.config.ts",
-        "*.config.js",
-        "*.config.mjs",
-        "*.config.cjs",
-        "apps/web/src/app/**/page.tsx",
-        "apps/web/src/app/**/layout.tsx",
-        "apps/web/src/app/**/not-found.tsx",
-        "apps/web/src/app/**/*error.tsx",
-        "apps/web/src/app/**/opengraph-image.tsx"
-      ],
-      "linter": {
-        "rules": {
-          "style": {
-            "noDefaultExport": "off"
-          }
-        }
-      }
-    }
-  ]
+  }
 }
