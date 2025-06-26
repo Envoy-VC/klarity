@@ -36,7 +36,10 @@
     "./tsconfig/tsc/no-dom/library": "./tsconfig/tsc/no-dom/library.json",
     "./tsconfig/tsc/no-dom/library-monorepo": "./tsconfig/tsc/no-dom/library-monorepo.json"
   },
-  "files": ["./biome", "./tsconfig"],
+  "files": [
+    "./biome",
+    "./tsconfig"
+  ],
   "homepage": "https://github.com/Envoy-vc/klarity#readme",
   "keywords": [
     "klarity",
@@ -61,5 +64,5 @@
     "release": "pnpm biome format --write && changeset publish",
     "version-packages": "changeset version"
   },
-  "version": "0.0.4"
+  "version": "0.0.5"
 }
