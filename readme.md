@@ -31,37 +31,14 @@ Then, you can extend your `biome.json` file with the following:
 
 ```json
 {
-  "$schema": "https://biomejs.dev/schemas/1.9.4/schema.json",
+  "$schema": "https://biomejs.dev/schemas/2.0.5/schema.json",
   "extends": ["klarity/biome"]
 }
 ```
 
-### Preset Support for Monorepos
+### Preset for Monorepos
 
-Biome does not support monorepos out of the box. Issue [here](https://github.com/biomejs/biome/issues/2228)
-
-However, you can use the overrides configuration to change the behaviour of Biome in certain packages.
-
-For example:
-
-```json
-{
-  "$schema": "https://biomejs.dev/schemas/1.9.4/schema.json",
-  "extends": ["klarity/biome"],
-  "overrides": [
-    {
-      "include": ["packages/ui/**"],
-      "linter": {
-        "rules": {
-          "suspicious": {
-            "noConsoleLog": "error"
-          }
-        }
-      }
-    }
-  ]
-}
-```
+To use Klarity for monorepos, you need to follow the instructions [here](https://biomejs.dev/guides/big-projects/#monorepo)
 
 ---
 
@@ -71,19 +48,6 @@ Create a `.vscode/settings.json` file with the following contents to enable full
 
 ```json
 {
-  "typescript.tsdk": "node_modules/typescript/lib",
-  "editor.defaultFormatter": "biomejs.biome",
-  "editor.formatOnSave": true,
-  "editor.codeActionsOnSave": {
-    "quickfix.biome": "explicit",
-    "source.organizeImports.biome": "explicit"
-  },
-  "[typescript]": {
-    "editor.defaultFormatter": "biomejs.biome"
-  },
-  "[json]": {
-    "editor.defaultFormatter": "biomejs.biome"
-  },
   "[css]": {
     "editor.defaultFormatter": "biomejs.biome"
   },
@@ -93,14 +57,29 @@ Create a `.vscode/settings.json` file with the following contents to enable full
   "[javascript]": {
     "editor.defaultFormatter": "biomejs.biome"
   },
+  "[json]": {
+    "editor.defaultFormatter": "biomejs.biome"
+  },
   "[jsonc]": {
+    "editor.defaultFormatter": "biomejs.biome"
+  },
+  "[typescript]": {
     "editor.defaultFormatter": "biomejs.biome"
   },
   "[typescriptreact]": {
     "editor.defaultFormatter": "biomejs.biome"
-  }
+  },
+  "editor.codeActionsOnSave": {
+    "source.action.useSortedAttributes.biome": "explicit",
+    "source.action.useSortedKeys.biome": "explicit",
+    "source.action.useSortedProperties.biome": "explicit",
+    "source.fixAll.biome": "explicit",
+    "source.organizeImports.biome": "explicit"
+  },
+  "editor.defaultFormatter": "biomejs.biome",
+  "editor.formatOnSave": true,
+  "typescript.tsdk": "node_modules/typescript/lib"
 }
-
 ```
 
 
